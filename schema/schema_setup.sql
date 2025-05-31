@@ -5,7 +5,7 @@
 -- COMMAND ----------
 
 -- MAGIC %md
--- MAGIC **create bronze schema**
+-- MAGIC ## Bronze schema
 
 -- COMMAND ----------
 
@@ -24,3 +24,18 @@ DESCRIBE SCHEMA EXTENDED bronze
 -- COMMAND ----------
 
 DESCRIBE SCHEMA bronze
+
+-- COMMAND ----------
+
+-- MAGIC %md
+-- MAGIC ## Silver schema
+
+-- COMMAND ----------
+
+CREATE SCHEMA IF NOT EXISTS silver
+LOCATION '/mnt/silver';
+
+
+-- COMMAND ----------
+
+DESCRIBE SCHEMA EXTENDED silver
