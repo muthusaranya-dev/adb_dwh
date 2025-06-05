@@ -10,16 +10,10 @@
 -- COMMAND ----------
 
 CREATE SCHEMA IF NOT EXISTS bronze
-LOCATION '/mnt/raw/bronze';
-
-
-
-
-
 
 -- COMMAND ----------
 
-DESCRIBE SCHEMA EXTENDED bronze
+
 
 -- COMMAND ----------
 
@@ -33,7 +27,6 @@ DESCRIBE SCHEMA bronze
 -- COMMAND ----------
 
 CREATE SCHEMA IF NOT EXISTS silver
-LOCATION '/mnt/silver';
 
 
 -- COMMAND ----------
